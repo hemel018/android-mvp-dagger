@@ -1,0 +1,19 @@
+
+`squid:S2147"DCombine this catch with the one at line 77, which has the same body.(ï­£Ä8á³Ð›ì+
+osquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(‚¯ì°ýÿÿÿÿ8ïš½åë+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8á³Ð›ì+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8á³Ð›ì+
+Ssquid:S1313"2Make this IP "192.168.1.121" address configurable.(‘À©ûÿÿÿÿ8•¤·Åì+
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ8á³Ð›ì+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8á³Ð›ì+
+œsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷Å‡18¢¿¸›ì+
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8á³Ð›ì+
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ8á³Ð›ì+
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ8á³Ð›ì+
+Osquid:S1068".Remove this unused "buttonSend" private field.(æ¢ø¬ÿÿÿÿÿ8¶´Í›ì+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8á³Ð›ì+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8á³Ð›ì+
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ8á³Ð›ì+
+Xsquid:UselessImportCheck"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8Ÿ¹¢Åì+
+zsquid:S1450"YRemove the "buttonSend" field and declare it as a local variable in the relevant methods.(æ¢ø¬ÿÿÿÿÿ8¶´Í›ì+
+Ssquid:S1135"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ8á³Ð›ì+

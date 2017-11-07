@@ -1,33 +1,29 @@
 package com.rana;
 
-import android.app.Activity;
 import android.app.Application;
 
+import com.rana.dagger.AppComponent;
+import com.rana.dagger.AppModule;
 import com.rana.dagger.DaggerAppComponent;
-
-import javax.inject.Inject;
-
-import dagger.android.AndroidInjector;
-import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasActivityInjector;
+import com.rana.dagger.NetModule;
 
 /**
  * Created by rana on 9/25/17.
  */
 
-public class MyApplication extends Application implements HasActivityInjector {
+public class MyApplication extends Application {
 
-    @Inject
-    DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
+    AppComponent appComponent;
+
 
     @Override
     public void onCreate() {
-        DaggerAppComponent.builder().application(this).build().inject(this);
         super.onCreate();
+        appComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).netModule(new NetModule("https://api.github.com")).build();
     }
 
-    @Override
-    public AndroidInjector<Activity> activityInjector() {
-        return dispatchingAndroidInjector;
+    public AppComponent getAppComponent() {
+        return appComponent;
     }
+
 }

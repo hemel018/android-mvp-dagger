@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.rana.MyApplication;
 import com.rana.R;
 
 import java.io.DataInputStream;
@@ -20,6 +21,7 @@ import java.net.UnknownHostException;
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
+import retrofit2.Retrofit;
 
 /**
  * Created by rana on 9/25/17.
@@ -27,16 +29,16 @@ import dagger.android.AndroidInjection;
 
 public class MainActivity extends AppCompatActivity implements MainView {
 
-    @Inject
-    MainPresenter mainPresenter;
 
+    @Inject
+    Retrofit mRetrofit;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-        AndroidInjection.inject(this);
+        ((MyApplication)getApplication()).getAppComponent().inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mainPresenter.loadMain();
+
     }
 
     @Override

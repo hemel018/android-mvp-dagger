@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 
-def daggerVersion = '2.11'
+def daggerVersion = '2.12'
+def retrofitVersion = '2.3.0'
 def supportLibraryVersion = '26.1.0'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.rana"
         minSdkVersion 15
@@ -32,11 +33,17 @@ dependencies {
     })
 
     implementation 'com.anton46:stepsview:0.0.2'
+
+    //Network
     compile "com.google.dagger:dagger:$daggerVersion"
     annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
     compile "com.google.dagger:dagger-android-support:$daggerVersion"
     annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVersion"
 
+    //Network
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
 
+    implementation 'com.dualcores.swagpoints:swagpoints:1.0.2'
 
 }
